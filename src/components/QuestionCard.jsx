@@ -4,7 +4,7 @@ import receivedQuestionIcon from '../assets/images/messages_icon.png';
 
 const StyledQuestionCardContainer = styled.section`
   min-width: 186px;
-  width: 220px;
+  width: 100%;
   height: 187px;
   border-radius: 16px;
   border: 1px solid var(--gray40);
@@ -14,6 +14,10 @@ const StyledQuestionCardContainer = styled.section`
 const StyledProfileImg = styled.img`
   width: 60px;
   border-radius: 9999px;
+  @media (max-width: 767px) {
+    width: 48px;
+    height: 48px;
+  }
 `;
 
 const StyledUserName = styled.p`
@@ -21,6 +25,9 @@ const StyledUserName = styled.p`
   font-weight: 400;
   line-height: 25px;
   margin: 10px 0;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 const StyledReceivedQuestionArea = styled.div`
@@ -43,6 +50,9 @@ const StyledReceivedQuestionText = styled.p`
   font-weight: 400;
   line-height: 22px;
   color: var(--gray40);
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 `;
 
 function QuestionCard() {
